@@ -18,7 +18,7 @@ export default function Footer() {
                         ?
                     </h2>
                     <p className="mt-6 text-lg text-soft-light max-w-xl mx-auto">
-                        Join 500+ early adopters and be the first to get Lumaloop at our exclusive pre-order price.
+                        Join 500+ early adopters and be the first to get LumaLoop at our exclusive pre-order price.
                     </p>
 
                     {/* Price + CTA */}
@@ -89,7 +89,7 @@ export default function Footer() {
                 </div>
 
                 <div className="border-t border-blush/10 py-6 text-center text-xs text-soft-muted">
-                    © {new Date().getFullYear()} Lumaloop Inc. All rights reserved.
+                    © {new Date().getFullYear()} LumaLoop Inc. All rights reserved.
                 </div>
             </div>
         </footer>

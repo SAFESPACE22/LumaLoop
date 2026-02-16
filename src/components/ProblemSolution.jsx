@@ -24,7 +24,7 @@ const problems = [
     },
     {
         icon: Sparkles,
-        title: 'The Lumaloop Fix',
+        title: 'The LumaLoop Fix',
         description:
             'Hook your essentials directly onto the bottle you already carry. One band. Zero clutter. Total freedom.',
         color: 'text-blush-deep',

@@ -80,7 +80,7 @@ export default function UseCases() {
                         </span>
                     </h2>
                     <p className="mt-4 text-soft-light text-lg max-w-2xl mx-auto">
-                        One product, countless scenarios. See how Lumaloop fits into your world.
+                        One product, countless scenarios. See how LumaLoop fits into your world.
                     </p>
                 </div>
 

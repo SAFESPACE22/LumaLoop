@@ -46,7 +46,7 @@ export default function FoundersNote() {
 
                     <div className="p-10 sm:p-14">
                         <blockquote className="text-xl sm:text-2xl font-light leading-relaxed text-soft italic">
-                            "I started Lumaloop after dropping my keys three flights of stairs for the
+                            "I started LumaLoop after dropping my keys three flights of stairs for the
                             third time in a week. The idea was simple — your water bottle is already
                             in your hand. Why not let it carry the small stuff too?"
                         </blockquote>

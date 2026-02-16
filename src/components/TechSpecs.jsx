@@ -77,7 +77,7 @@ export default function TechSpecs() {
                         </span>
                     </h2>
                     <p className="mt-4 text-soft-light text-lg max-w-2xl mx-auto">
-                        Every Lumaloop is precision-molded from high-performance materials that pros trust.
+                        Every LumaLoop is precision-molded from high-performance materials that pros trust.
                     </p>
                 </div>
 
