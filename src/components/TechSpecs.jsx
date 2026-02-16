@@ -67,16 +67,16 @@ export default function TechSpecs() {
             <div className="max-w-7xl mx-auto px-6">
                 {/* Header */}
                 <div className="text-center mb-16 animate-on-scroll">
-                    <span className="text-lavender-dark text-sm font-semibold uppercase tracking-widest">
+                    <span className="text-terra text-sm font-semibold uppercase tracking-widest">
                         Technical Specs
                     </span>
-                    <h2 className="mt-4 text-4xl sm:text-5xl font-bold tracking-tight text-soft">
+                    <h2 className="mt-4 text-4xl sm:text-5xl font-bold tracking-tight text-bark">
                         Engineered to
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-lavender-dark to-blush">
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-sage-dark to-sage-deep">
                             {' '}Endure
                         </span>
                     </h2>
-                    <p className="mt-4 text-soft-light text-lg max-w-2xl mx-auto">
+                    <p className="mt-4 text-bark-light text-lg max-w-2xl mx-auto">
                         Every LumaLoop is precision-molded from high-performance materials that pros trust.
                     </p>
                 </div>
@@ -88,18 +88,18 @@ export default function TechSpecs() {
                         return (
                             <div
                                 key={idx}
-                                className="animate-on-scroll group glow-border rounded-2xl p-6 bg-white/50 hover:bg-white/80 hover:shadow-md hover:shadow-blush/5 transition-all duration-500"
+                                className="animate-on-scroll group rounded-2xl p-6 bg-white/50 shadow-soft hover:shadow-soft-md hover:-translate-y-1 transition-all duration-500"
                             >
                                 <div className="flex items-start gap-4">
-                                    <div className="w-12 h-12 shrink-0 rounded-xl bg-lavender-light flex items-center justify-center text-lavender-dark group-hover:bg-lavender/20 transition-colors duration-300">
+                                    <div className="w-12 h-12 shrink-0 rounded-xl bg-sage-pale flex items-center justify-center text-sage-dark group-hover:bg-sage-light transition-colors duration-300">
                                         <Icon size={24} />
                                     </div>
                                     <div>
-                                        <p className="text-sm text-soft-muted font-medium">{spec.label}</p>
-                                        <p className="text-2xl font-bold text-soft mt-1">{spec.value}</p>
+                                        <p className="text-sm text-bark-muted font-medium">{spec.label}</p>
+                                        <p className="text-2xl font-bold text-bark mt-1">{spec.value}</p>
                                     </div>
                                 </div>
-                                <p className="mt-4 text-sm text-soft-light leading-relaxed">
+                                <p className="mt-4 text-sm text-bark-light leading-relaxed">
                                     {spec.description}
                                 </p>
                             </div>
@@ -109,16 +109,16 @@ export default function TechSpecs() {
 
                 {/* Compatibility bar */}
                 <div className="mt-16 animate-on-scroll">
-                    <div className="rounded-2xl border border-lavender/15 bg-lavender-light/30 p-8 text-center">
-                        <p className="text-sm uppercase tracking-widest text-soft-muted mb-4">
+                    <div className="rounded-2xl bg-sage-pale/40 shadow-soft p-8 text-center">
+                        <p className="text-sm uppercase tracking-widest text-bark-muted mb-4">
                             Works With Your Favorite Bottles
                         </p>
-                        <div className="flex flex-wrap justify-center gap-8 text-lg font-semibold text-soft-light">
+                        <div className="flex flex-wrap justify-center gap-8 text-lg font-semibold text-bark-muted">
                             {['Hydro Flask', 'Stanley', 'Nalgene', 'CamelBak', 'YETI', 'Klean Kanteen', 'Owala'].map(
                                 (brand) => (
                                     <span
                                         key={brand}
-                                        className="hover:text-blush-deep transition-colors duration-300 cursor-default"
+                                        className="hover:text-sage-deep transition-colors duration-300 cursor-default"
                                     >
                                         {brand}
                                     </span>

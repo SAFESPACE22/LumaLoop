@@ -7,30 +7,24 @@ const problems = [
         title: 'The Cluttered Bag',
         description:
             'Keys tangled with earbuds. Wallet buried under gym clothes. You waste minutes digging through chaos every single day.',
-        color: 'text-peach-dark',
-        borderColor: 'border-peach/30',
-        bgAccent: 'bg-peach-light',
-        iconBg: 'bg-peach/20',
+        color: 'text-terra-dark',
+        iconBg: 'bg-terra-pale',
     },
     {
         icon: Frown,
         title: 'Pockets Overloaded',
         description:
             'Bulging pockets, uncomfortable walks, and the constant fear of dropping something on your commute.',
-        color: 'text-lavender-dark',
-        borderColor: 'border-lavender/30',
-        bgAccent: 'bg-lavender-light',
-        iconBg: 'bg-lavender/20',
+        color: 'text-rose',
+        iconBg: 'bg-rose-light',
     },
     {
         icon: Sparkles,
         title: 'The LumaLoop Fix',
         description:
             'Hook your essentials directly onto the bottle you already carry. One band. Zero clutter. Total freedom.',
-        color: 'text-blush-deep',
-        borderColor: 'border-blush/30',
-        bgAccent: 'bg-blush-light',
-        iconBg: 'bg-blush/20',
+        color: 'text-sage-deep',
+        iconBg: 'bg-sage-pale',
         highlight: true,
     },
 ];
@@ -62,13 +56,13 @@ export default function ProblemSolution() {
             <div className="max-w-7xl mx-auto px-6">
                 {/* Header */}
                 <div className="text-center mb-16 animate-on-scroll">
-                    <span className="text-blush text-sm font-semibold uppercase tracking-widest">
+                    <span className="text-sage-dark text-sm font-semibold uppercase tracking-widest">
                         The Problem
                     </span>
-                    <h2 className="mt-4 text-4xl sm:text-5xl font-bold tracking-tight text-soft">
+                    <h2 className="mt-4 text-4xl sm:text-5xl font-bold tracking-tight text-bark">
                         You Already Carry a Bottle.
                         <br />
-                        <span className="text-soft-muted">Why Not Make It Work Harder?</span>
+                        <span className="text-bark-muted">Why Not Make It Work Harder?</span>
                     </h2>
                 </div>
 
@@ -79,13 +73,13 @@ export default function ProblemSolution() {
                         return (
                             <div
                                 key={idx}
-                                className={`animate-on-scroll group relative rounded-2xl p-8 border transition-all duration-500 hover:-translate-y-2 hover:shadow-lg hover:shadow-blush/5 ${item.highlight
-                                        ? 'border-blush/30 bg-blush-light/50 shadow-md shadow-blush/5'
-                                        : `${item.borderColor} bg-white/50`
+                                className={`animate-on-scroll group relative rounded-2xl p-8 transition-all duration-500 hover:-translate-y-2 ${item.highlight
+                                        ? 'bg-sage-pale/60 shadow-soft-md hover:shadow-sage-glow'
+                                        : 'soft-card bg-white/50'
                                     }`}
                             >
                                 {item.highlight && (
-                                    <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-gradient-to-r from-blush to-blush-deep text-white text-xs font-bold rounded-full">
+                                    <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-gradient-to-r from-sage to-sage-dark text-white text-xs font-bold rounded-full shadow-soft">
                                         ✨ THE SOLUTION
                                     </div>
                                 )}
@@ -96,13 +90,13 @@ export default function ProblemSolution() {
                                     <Icon size={28} />
                                 </div>
 
-                                <h3 className="text-xl font-bold mb-3 text-soft">{item.title}</h3>
-                                <p className="text-soft-light leading-relaxed">{item.description}</p>
+                                <h3 className="text-xl font-bold mb-3 text-bark">{item.title}</h3>
+                                <p className="text-bark-light leading-relaxed">{item.description}</p>
 
                                 {item.highlight && (
                                     <a
                                         href="#specs"
-                                        className="mt-6 inline-flex items-center gap-2 text-blush-deep text-sm font-semibold hover:gap-3 transition-all duration-300"
+                                        className="mt-6 inline-flex items-center gap-2 text-sage-deep text-sm font-semibold hover:gap-3 transition-all duration-300"
                                     >
                                         See How It Works <ArrowRight size={16} />
                                     </a>

@@ -34,36 +34,36 @@ export default function FoundersNote() {
 
             <div className="max-w-5xl mx-auto px-6">
                 <div className="animate-on-scroll text-center mb-6">
-                    <span className="text-blush text-sm font-semibold uppercase tracking-widest">
+                    <span className="text-terra text-sm font-semibold uppercase tracking-widest">
                         From the Maker
                     </span>
                 </div>
 
                 {/* Quote card */}
-                <div className="animate-on-scroll relative rounded-3xl overflow-hidden border border-blush/15 bg-white/50 shadow-lg shadow-blush/5">
+                <div className="animate-on-scroll relative rounded-3xl overflow-hidden bg-white/50 shadow-soft-lg">
                     {/* Accent bar */}
-                    <div className="absolute top-0 left-0 bottom-0 w-1 bg-gradient-to-b from-blush via-lavender to-mint" />
+                    <div className="absolute top-0 left-0 bottom-0 w-1 bg-gradient-to-b from-sage via-terra/50 to-sand" />
 
                     <div className="p-10 sm:p-14">
-                        <blockquote className="text-xl sm:text-2xl font-light leading-relaxed text-soft italic">
+                        <blockquote className="text-xl sm:text-2xl font-light leading-relaxed text-bark italic">
                             "I started LumaLoop after dropping my keys three flights of stairs for the
                             third time in a week. The idea was simple — your water bottle is already
                             in your hand. Why not let it carry the small stuff too?"
                         </blockquote>
 
                         <div className="mt-8 flex items-center gap-4">
-                            <div className="w-14 h-14 rounded-full bg-gradient-to-br from-blush to-lavender flex items-center justify-center text-white font-bold text-lg">
-                                TH
+                            <div className="w-14 h-14 rounded-full bg-gradient-to-br from-sage to-sage-dark flex items-center justify-center text-white font-bold text-lg shadow-sage-glow">
+                                TV
                             </div>
                             <div>
-                                <p className="font-semibold text-soft">Tyler Vuong</p>
-                                <p className="text-sm text-soft-muted">Founder</p>
+                                <p className="font-semibold text-bark">Tyler Vuong</p>
+                                <p className="text-sm text-bark-muted">Founder</p>
                             </div>
                         </div>
 
                         {/* Timeline */}
-                        <div className="mt-12 pt-8 border-t border-blush/10">
-                            <p className="text-sm text-soft-muted uppercase tracking-widest mb-6">
+                        <div className="mt-12 pt-8 border-t border-sand-dark/30">
+                            <p className="text-sm text-bark-muted uppercase tracking-widest mb-6">
                                 The Journey
                             </p>
                             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
@@ -74,11 +74,11 @@ export default function FoundersNote() {
                                             key={idx}
                                             className="animate-on-scroll flex flex-col items-center text-center group"
                                         >
-                                            <div className="w-12 h-12 rounded-xl bg-lavender-light flex items-center justify-center text-lavender-dark mb-3 group-hover:bg-blush-light group-hover:text-blush-deep transition-colors duration-300">
+                                            <div className="w-12 h-12 rounded-xl bg-sage-pale flex items-center justify-center text-sage-dark mb-3 shadow-soft group-hover:shadow-sage-glow group-hover:bg-sage-light transition-all duration-300">
                                                 <Icon size={22} />
                                             </div>
-                                            <p className="text-sm font-semibold text-soft">{ms.label}</p>
-                                            <p className="text-xs text-soft-muted mt-1">{ms.date}</p>
+                                            <p className="text-sm font-semibold text-bark">{ms.label}</p>
+                                            <p className="text-xs text-bark-muted mt-1">{ms.date}</p>
                                         </div>
                                     );
                                 })}
@@ -91,7 +91,7 @@ export default function FoundersNote() {
                                 (stat) => (
                                     <span
                                         key={stat}
-                                        className="px-4 py-2 rounded-full border border-lavender/20 text-soft-light bg-lavender-light/40"
+                                        className="px-4 py-2 rounded-full text-bark-light bg-sage-pale/50 shadow-soft"
                                     >
                                         {stat}
                                     </span>

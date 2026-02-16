@@ -17,29 +17,29 @@ html {
 }
 
 body {
-  background-color: #fffaf5;
-  color: #6b5b73;
+  background-color: #faf8f4;
+  color: #5c4f43;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* ───── Custom scrollbar ───── */
+/* ───── Scrollbar ───── */
 ::-webkit-scrollbar {
   width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #fef6ee;
+  background: #f5f0e8;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #f4a0b566;
+  background: #9caa8e88;
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #f4a0b5aa;
+  background: #9caa8ecc;
 }
 
 /* ───── Utility animations ───── */
@@ -54,35 +54,35 @@ body {
   transform: translateY(0);
 }
 
-/* ───── Gradient mesh background ───── */
+/* ───── Gradient mesh ───── */
 .gradient-mesh {
   background:
-    radial-gradient(ellipse at 20% 50%, rgba(201, 177, 255, 0.12) 0%, transparent 50%),
-    radial-gradient(ellipse at 80% 20%, rgba(244, 160, 181, 0.10) 0%, transparent 50%),
-    radial-gradient(ellipse at 50% 80%, rgba(168, 230, 207, 0.08) 0%, transparent 50%);
+    radial-gradient(ellipse at 20% 50%, rgba(156, 170, 142, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(201, 144, 122, 0.06) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 80%, rgba(212, 160, 160, 0.05) 0%, transparent 50%);
 }
 
 /* ───── Glassmorphism ───── */
 .glass {
-  background: rgba(255, 250, 245, 0.8);
+  background: rgba(250, 248, 244, 0.85);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border-bottom: 1px solid rgba(244, 160, 181, 0.15);
+  box-shadow: 0 2px 20px rgba(92, 79, 67, 0.05);
 }
 
-/* ───── Glow border ───── */
-.glow-border {
-  border: 1px solid rgba(244, 160, 181, 0.15);
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+/* ───── Soft card ───── */
+.soft-card {
+  background: rgba(255, 255, 255, 0.55);
+  box-shadow: 0 2px 20px rgba(92, 79, 67, 0.05);
+  transition: box-shadow 0.4s ease, transform 0.4s ease;
 }
 
-.glow-border:hover {
-  border-color: rgba(244, 160, 181, 0.35);
-  box-shadow: 0 0 30px rgba(244, 160, 181, 0.08);
+.soft-card:hover {
+  box-shadow: 0 8px 40px rgba(92, 79, 67, 0.10);
 }
 
 /* ───── Section divider ───── */
 .section-divider {
   height: 1px;
-  background: linear-gradient(90deg, transparent 0%, rgba(201, 177, 255, 0.25) 50%, transparent 100%);
+  background: linear-gradient(90deg, transparent 0%, rgba(156, 170, 142, 0.25) 50%, transparent 100%);
 }

@@ -9,11 +9,10 @@ const personas = [
         description:
             'No more fishing through a laptop bag at the turnstile. Hook your transit pass and keys to your bottle and breeze through your morning.',
         items: ['Transit pass', 'Keys', 'AirPods case'],
-        gradient: 'from-peach-light to-blush-light',
-        tagColor: 'text-peach-dark',
-        chipBg: 'bg-peach/15',
-        chipText: 'text-peach-dark',
-        chipBorder: 'border-peach/20',
+        gradient: 'from-sand-warm to-terra-pale',
+        tagColor: 'text-terra-dark',
+        chipBg: 'bg-terra-pale',
+        chipText: 'text-terra-dark',
     },
     {
         icon: Dumbbell,
@@ -22,11 +21,10 @@ const personas = [
         description:
             'Clip your locker key, gym pass, and earbuds to your shaker bottle. Walk from machine to machine without a bag weighing you down.',
         items: ['Gym pass', 'Locker key', 'Earbuds case'],
-        gradient: 'from-blush-light to-lavender-light',
-        tagColor: 'text-blush-deep',
-        chipBg: 'bg-blush/15',
-        chipText: 'text-blush-deep',
-        chipBorder: 'border-blush/20',
+        gradient: 'from-sage-pale to-sage-light',
+        tagColor: 'text-sage-deep',
+        chipBg: 'bg-sage-pale',
+        chipText: 'text-sage-deep',
     },
     {
         icon: Mountain,
@@ -35,11 +33,10 @@ const personas = [
         description:
             'Attach a whistle, mini-light, or snack pouch to your Nalgene. Keep critical gear within reach when your pack is on your back.',
         items: ['Whistle', 'Mini flashlight', 'Carabiner keys'],
-        gradient: 'from-mint-light to-lavender-light',
-        tagColor: 'text-mint-dark',
-        chipBg: 'bg-mint/15',
-        chipText: 'text-mint-dark',
-        chipBorder: 'border-mint/20',
+        gradient: 'from-sage-light to-sand-warm',
+        tagColor: 'text-sage-dark',
+        chipBg: 'bg-sage-light',
+        chipText: 'text-sage-dark',
     },
 ];
 
@@ -70,16 +67,16 @@ export default function UseCases() {
             <div className="max-w-7xl mx-auto px-6">
                 {/* Header */}
                 <div className="text-center mb-16 animate-on-scroll">
-                    <span className="text-mint-dark text-sm font-semibold uppercase tracking-widest">
+                    <span className="text-sage-dark text-sm font-semibold uppercase tracking-widest">
                         Use Cases
                     </span>
-                    <h2 className="mt-4 text-4xl sm:text-5xl font-bold tracking-tight text-soft">
+                    <h2 className="mt-4 text-4xl sm:text-5xl font-bold tracking-tight text-bark">
                         Built for
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blush to-lavender-dark">
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-sage-dark to-sage-deep">
                             {' '}Every Lifestyle
                         </span>
                     </h2>
-                    <p className="mt-4 text-soft-light text-lg max-w-2xl mx-auto">
+                    <p className="mt-4 text-bark-light text-lg max-w-2xl mx-auto">
                         One product, countless scenarios. See how LumaLoop fits into your world.
                     </p>
                 </div>
@@ -91,27 +88,27 @@ export default function UseCases() {
                         return (
                             <div
                                 key={idx}
-                                className="animate-on-scroll group relative rounded-3xl overflow-hidden border border-blush/10 bg-white/40 hover:bg-white/70 hover:shadow-lg hover:shadow-blush/5 transition-all duration-500 hover:-translate-y-2"
+                                className="animate-on-scroll group relative rounded-3xl overflow-hidden bg-white/40 shadow-soft hover:shadow-soft-lg transition-all duration-500 hover:-translate-y-2"
                             >
                                 {/* Gradient header */}
                                 <div
                                     className={`h-48 bg-gradient-to-br ${persona.gradient} flex items-center justify-center relative`}
                                 >
-                                    <div className="w-20 h-20 rounded-2xl bg-white/70 backdrop-blur-sm flex items-center justify-center text-blush-deep shadow-lg shadow-blush/10 group-hover:scale-110 transition-transform duration-500">
+                                    <div className="w-20 h-20 rounded-2xl bg-white/70 backdrop-blur-sm flex items-center justify-center text-sage-deep shadow-soft-md group-hover:scale-110 transition-transform duration-500">
                                         <Icon size={36} />
                                     </div>
                                     {/* Subtle dot pattern */}
-                                    <div className="absolute inset-0 opacity-30" style={{
-                                        backgroundImage: 'radial-gradient(circle at 1px 1px, rgba(107,91,115,0.1) 1px, transparent 0)',
+                                    <div className="absolute inset-0 opacity-20" style={{
+                                        backgroundImage: 'radial-gradient(circle at 1px 1px, rgba(92,79,67,0.08) 1px, transparent 0)',
                                         backgroundSize: '24px 24px',
                                     }} />
                                 </div>
 
                                 {/* Content */}
                                 <div className="p-8">
-                                    <h3 className="text-2xl font-bold text-soft mb-1">{persona.title}</h3>
+                                    <h3 className="text-2xl font-bold text-bark mb-1">{persona.title}</h3>
                                     <p className={`${persona.tagColor} text-sm font-medium mb-4`}>{persona.tagline}</p>
-                                    <p className="text-soft-light leading-relaxed text-sm mb-6">
+                                    <p className="text-bark-light leading-relaxed text-sm mb-6">
                                         {persona.description}
                                     </p>
 
@@ -120,7 +117,7 @@ export default function UseCases() {
                                         {persona.items.map((item) => (
                                             <span
                                                 key={item}
-                                                className={`px-3 py-1 text-xs rounded-full ${persona.chipBg} ${persona.chipText} border ${persona.chipBorder}`}
+                                                className={`px-3 py-1 text-xs rounded-full ${persona.chipBg} ${persona.chipText} shadow-soft`}
                                             >
                                                 {item}
                                             </span>

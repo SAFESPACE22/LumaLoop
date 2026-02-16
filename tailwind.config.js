@@ -7,46 +7,53 @@ export default {
     theme: {
         extend: {
             colors: {
-                blush: {
-                    DEFAULT: '#f4a0b5',
-                    light: '#fce4ec',
-                    dark: '#e0758a',
-                    deep: '#d4607a',
+                sage: {
+                    DEFAULT: '#9caa8e',
+                    light: '#e8ede4',
+                    pale: '#f0f4ed',
+                    dark: '#7a8c6c',
+                    deep: '#5f7050',
                 },
-                lavender: {
-                    DEFAULT: '#c9b1ff',
-                    light: '#ede7ff',
-                    dark: '#a78bfa',
+                sand: {
+                    DEFAULT: '#f5f0e8',
+                    light: '#faf8f4',
+                    warm: '#ede6da',
+                    dark: '#ddd4c4',
                 },
-                mint: {
-                    DEFAULT: '#a8e6cf',
-                    light: '#e0f7ef',
-                    dark: '#6dc9a0',
+                terra: {
+                    DEFAULT: '#c9907a',
+                    light: '#f2ddd4',
+                    pale: '#f7ebe5',
+                    dark: '#b07460',
+                    deep: '#9c6350',
                 },
-                peach: {
-                    DEFAULT: '#ffd5c2',
-                    light: '#fff0e8',
-                    dark: '#f0a882',
+                rose: {
+                    DEFAULT: '#d4a0a0',
+                    light: '#f0dede',
                 },
-                cream: {
-                    DEFAULT: '#fffaf5',
-                    dark: '#f5ede4',
-                    warm: '#fef6ee',
-                },
-                soft: {
-                    DEFAULT: '#6b5b73',
-                    light: '#9a8da3',
-                    muted: '#b0a3b8',
+                bark: {
+                    DEFAULT: '#5c4f43',
+                    light: '#7d6e60',
+                    muted: '#a89a8c',
+                    soft: '#c4b5a5',
                 },
             },
             fontFamily: {
                 sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
             },
+            boxShadow: {
+                'soft': '0 2px 20px rgba(92, 79, 67, 0.06)',
+                'soft-md': '0 4px 30px rgba(92, 79, 67, 0.08)',
+                'soft-lg': '0 8px 40px rgba(92, 79, 67, 0.10)',
+                'soft-xl': '0 12px 50px rgba(92, 79, 67, 0.12)',
+                'sage-glow': '0 4px 30px rgba(156, 170, 142, 0.15)',
+                'terra-glow': '0 4px 30px rgba(201, 144, 122, 0.20)',
+            },
             animation: {
                 'fade-in': 'fadeIn 0.8s ease-out forwards',
                 'slide-up': 'slideUp 0.8s ease-out forwards',
                 'float': 'float 6s ease-in-out infinite',
-                'pulse-glow': 'pulseGlow 2s ease-in-out infinite',
+                'pulse-glow': 'pulseGlow 2.5s ease-in-out infinite',
             },
             keyframes: {
                 fadeIn: {
@@ -62,8 +69,8 @@ export default {
                     '50%': { transform: 'translateY(-20px)' },
                 },
                 pulseGlow: {
-                    '0%, 100%': { boxShadow: '0 0 20px rgba(244, 160, 181, 0.25)' },
-                    '50%': { boxShadow: '0 0 40px rgba(244, 160, 181, 0.45)' },
+                    '0%, 100%': { boxShadow: '0 4px 30px rgba(201, 144, 122, 0.15)' },
+                    '50%': { boxShadow: '0 8px 50px rgba(201, 144, 122, 0.30)' },
                 },
             },
         },
