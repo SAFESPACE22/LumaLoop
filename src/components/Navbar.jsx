@@ -26,9 +26,11 @@ export default function Navbar() {
             <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
                 {/* Logo */}
                 <a href="#" className="flex items-center gap-2 group">
-                    <div className="w-8 h-8 rounded-full bg-sage-light flex items-center justify-center shadow-soft group-hover:shadow-sage-glow transition-all duration-300">
-                        <div className="w-3 h-3 rounded-full bg-sage-dark" />
-                    </div>
+                    <img
+                        src="/logo.png"
+                        alt="LumaLoop"
+                        className="w-9 h-9 object-contain group-hover:scale-110 transition-transform duration-300"
+                    />
                     <span className="text-xl font-bold tracking-tight">
                         <span className="text-bark">Luma</span>
                         <span className="text-sage-dark">Loop</span>

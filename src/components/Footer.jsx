@@ -53,9 +53,11 @@ export default function Footer() {
                 <div className="max-w-7xl mx-auto px-6 py-10 flex flex-col md:flex-row items-center justify-between gap-6">
                     {/* Logo */}
                     <div className="flex items-center gap-2">
-                        <div className="w-6 h-6 rounded-full bg-sage-light flex items-center justify-center shadow-soft">
-                            <div className="w-2 h-2 rounded-full bg-sage-dark" />
-                        </div>
+                        <img
+                            src="/logo.png"
+                            alt="LumaLoop"
+                            className="w-7 h-7 object-contain"
+                        />
                         <span className="text-lg font-bold">
                             <span className="text-bark">Luma</span>
                             <span className="text-sage-dark">Loop</span>
