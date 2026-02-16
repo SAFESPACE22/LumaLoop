@@ -31,7 +31,7 @@ export default function Navbar() {
                     </div>
                     <span className="text-xl font-bold tracking-tight">
                         <span className="text-soft">Luma</span>
-                        <span className="text-blush">loop</span>
+                        <span className="text-blush">Loop</span>
                     </span>
                 </a>
 
